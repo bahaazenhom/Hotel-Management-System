@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/lib/org.eclipse.persistence.jpa-2.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/sqljdbc42.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/org.eclipse.persistence.jpa.jpql-2.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/org.eclipse.persistence.core-2.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/org.eclipse.persistence.antlr-2.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/org.eclipse.persistence.asm-9.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/jaxb-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/jaxb-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/AbsoluteLayout.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/jaxb-xjc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/javax.persistence-2.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/lib/org.eclipse.persistence.moxy-2.7.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
