@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="JavaApplication3PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>javaapplication3.Hotels</class>
+    <class>javaapplication3.Employee</class>
+    <class>javaapplication3.Transaction</class>
+    <class>javaapplication3.Department</class>
+    <class>javaapplication3.Guest</class>
+    <class>javaapplication3.Payment</class>
+    <class>javaapplication3.SptValues</class>
+    <class>javaapplication3.Service</class>
+    <class>javaapplication3.Room</class>
+    <class>DatabaseClasses.Booking</class>
+    <class>DatabaseClasses.Department</class>
+    <class>DatabaseClasses.Employee</class>
+    <class>DatabaseClasses.Guest</class>
+    <class>DatabaseClasses.Hotels</class>
+    <class>DatabaseClasses.Payment_1</class>
+    <class>DatabaseClasses.Room</class>
+    <class>DatabaseClasses.Service</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://bahaazenhom\sqlexpress;encrypt=true;trustServerCertificate=true;databaseName=master"/>
+      <property name="javax.persistence.jdbc.user" value="bahaa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123456789"/>
+    </properties>
+  </persistence-unit>
+</persistence>
