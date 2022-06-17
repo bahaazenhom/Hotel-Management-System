@@ -10,7 +10,6 @@ import java.lang.*;
 import java.util.*;
 import java.sql.*;
 import DatabaseClasses.*;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -227,7 +226,7 @@ public static Employee convertRowIntoEmployeeObject(ResultSet resultSet) throws 
         String email=resultSet.getString("email");
         String number=resultSet.getString("contuct_num");
         String role=resultSet.getString("role");
-         String address=resultSet.getString("address");
+        String address=resultSet.getString("address");
         float salary=resultSet.getFloat("salary");
         String proofId=resultSet.getString("proof_ID");
         String password=resultSet.getString("password");
@@ -331,7 +330,7 @@ public static List<Employee> getAllEmployees() throws SQLException {
       Statement statement=Methods.makeStatement();
       ResultSet resultSet=statement.executeQuery("select * from Employee");
       while(resultSet.next()){
-         Employee employee=Methods.convertRowIntoEmployeeObject(resultSet);
+          Employee employee=Methods.convertRowIntoEmployeeObject(resultSet);
           list.add(employee);
       }
       return list;

@@ -182,12 +182,15 @@ public class check_out extends javax.swing.JFrame {
     private void check_out1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_check_out1ActionPerformed
         if(!out.getText().isEmpty()){
             int id=Integer.parseInt(out.getText().toString());
-              if(Methods.checkBooking(id).equals("null")){
+              if(Methods.checkBooking(id).equals("NULL")){
                      Methods.setBookingCheckOut("Checked Out", id);
-              success.setText("Booking Checked Out");
+                    success.setText("Booking Checked Out");
+              }
+              else if(Methods.checkBooking(id).equals("Checked Out")){
+                  success.setText("Booking Already Check out");
               }
               else {
-                  success.setText("Booking Already Check out");
+                  success.setText("Booking Has Check Out Date");
               }
            
         }
