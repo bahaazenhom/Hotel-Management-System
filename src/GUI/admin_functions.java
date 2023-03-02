@@ -186,7 +186,7 @@ public class admin_functions extends javax.swing.JFrame {
 
     private void backTo_logActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backTo_logActionPerformed
         index index =new index();
-       index.setVisible(true);
+        index.setVisible(true);
         dispose();
     }//GEN-LAST:event_backTo_logActionPerformed
 

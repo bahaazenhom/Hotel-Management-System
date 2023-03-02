@@ -38,7 +38,7 @@ public static Connection connect(){
             connect=DriverManager.getConnection(url,user,pass);
         }
         catch(SQLException ex){
-             System.out.println("error");
+             System.out.println("errooooooooooor");
              ex.printStackTrace();
         }
    return connect;
@@ -557,12 +557,14 @@ public static String askAuthentication(String user,String pass){
             if(user.isEmpty()||pass.isEmpty())return "Enter Username or Password";
             PreparedStatement statement =Methods.getPreparedStatement("select * from Employee where first_name=?");
             statement.setString(1, user);
+           
             ResultSet empDetails=statement.executeQuery();
+         //   System.out.println(empDetails.next());
             if(empDetails.next()){
             int flag=Integer.parseInt(empDetails.getString("Access"));
-            if(flag==1){if(!empDetails.getString("password").equals(pass))return "Wrong Username or Password";}
-            else return "You have no access";
+            if(!empDetails.getString("password").equals(pass))return "Wrong Username or Password";
             }
+            else return "You have no access";
         }
         catch(SQLException ex){
              ex.printStackTrace();
